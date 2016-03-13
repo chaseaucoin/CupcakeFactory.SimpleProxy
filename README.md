@@ -2,7 +2,9 @@
 
 A very lightweight, and easy to consume proxy. Ideal for the proxying of interface methods.
 
-# Usage
+# Example passthrough with logging
+
+In this example we are going to use the original class to do some body of work, but we are going to add logging with each method call. 
 
 ```csharp	
 	public class LoggerProxy<T>
@@ -27,7 +29,10 @@ A very lightweight, and easy to consume proxy. Ideal for the proxying of interfa
 		private object InvokeWithLogging(MethodBase method, MethodParameterCollection methodParameters)
         {
 			_logger.Log(method, methodParameters);
-			method.Invoke(_baseObject, methodParameters.Args);
+
+			object returnValue = method.Invoke(_baseObject, methodParameters.Args);
+
+			return returnValue;
 		}
 	}
 ```
