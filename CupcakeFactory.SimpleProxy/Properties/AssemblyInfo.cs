@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CupcakeFactory.SimpleProxy")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A simple lightweight proxy for interfaces and classes")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("http://cupcakefactory.net")]
 [assembly: AssemblyProduct("CupcakeFactory.SimpleProxy")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
