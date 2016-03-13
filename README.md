@@ -2,7 +2,7 @@
 
 A very lightweight, and easy to consume proxy. Ideal for the proxying of interface methods.
 
-# Example passthrough with logging
+# Example: logging
 
 In this example we are going to use the original class to do some body of work, but we are going to add logging with each method call. 
 
