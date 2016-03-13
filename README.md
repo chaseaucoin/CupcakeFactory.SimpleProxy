@@ -31,3 +31,15 @@ A very lightweight, and easy to consume proxy. Ideal for the proxying of interfa
 		}
 	}
 ```
+
+```csharp
+	static void Main(string[] args)
+    {
+		SomeServiceClass someService = new SomeServiceClass();
+
+        SomeServiceClass proxiedService = new LoggerProxy<SomeServiceClass>()
+            .CreateProxy(someService);
+
+		proxiedService.SomeMethod();
+	}
+```
