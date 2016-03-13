@@ -1,6 +1,6 @@
 # CupcakeFactory.SimpleProxy
 
-A very lightweight, and easy to consume proxy. Ideal for the proxying of interface methods.
+A very lightweight, and easy to consume proxy. Ideal for the proxying of methods.
 
 # Example: logging
 
